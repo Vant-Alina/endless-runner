@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 1946515263}
   m_Layer: 0
   m_Name: game manager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -746,10 +746,20 @@ MonoBehaviour:
   cameraStartPos: {x: 0, y: 8.57, z: -14.12}
   cameraEndPos: {x: 0, y: 6.84, z: -7.61}
   timeUntilMaxZoom: 30
-  startGameSpeed: 1
-  maxGameSpeed: 2
-  timeUntilMaxSpeed: 10
+  startGameSpeed: 8
+  maxGameSpeed: 15
+  timeUntilMaxSpeed: 30
+  startObstacleFrequency: 1.5
+  maxObstacleFrequency: 0.5
+  timeUntilMaxFrequency: 30
   camera: {fileID: 963194225}
+  obstacles:
+  - {fileID: 3719175346615230470, guid: 94167653e4cfd0d42b85a183965bc065, type: 3}
+  - {fileID: 8817427810745139385, guid: 7c94067214af2c24b878b8a47eabf3cd, type: 3}
+  - {fileID: 6523717162352311670, guid: 7e2ed7dd22c93554b80811647d1212d2, type: 3}
+  gameSpeed: 0
+  spawnFrequency: 0
+  timeSinceLastSpawn: 0
 --- !u!4 &1946515264
 Transform:
   m_ObjectHideFlags: 0
@@ -758,7 +768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946515262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.0458145, y: 1.6322799, z: 0.43824673}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
